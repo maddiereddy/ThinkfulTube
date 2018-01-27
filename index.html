@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Thinkful Tube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main role="main">
+      <header role="banner">
+        <h1>Thinkful Tube</h1>
+      </header>
+
+      <form action="#" class="js-search-form">
+        <fieldset>
+          <label for="query"></label>
+          <input type="text" id="query" class="js-query">
+          <button type="submit">Search</button>
+        </fieldset>
+      </form>
+          
+      <section role="region">
+        <h2 class="js-results-header"></h2>
+        <ul id="search-results" class="js-search-results"></ul>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
