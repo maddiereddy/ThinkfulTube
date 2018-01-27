@@ -20,10 +20,13 @@ function renderResult(result) {
   return `<li>
       <h3>${result.snippet.title}</h3>
       <p>
-        <a href="https://www.youtube.com/watch?v=${result.id.videoId}">
+        <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target=”_blank”>
           <img src="${result.snippet.thumbnails.medium.url}" alt="${result.snippet.title}">
         </a>
-        <a href="https://www.youtube.com/channel/${result.snippet.channelId}">${result.snippet.channelTitle}</a><br>
+        <a href="https://www.youtube.com/channel/${result.snippet.channelId}" target=”_blank”>
+          ${result.snippet.channelTitle}
+        </a>
+        <br>
         ${result.snippet.description}
       </p>
     </li>`;
@@ -42,8 +45,6 @@ function watchSubmit() {
 
     const queryTarget = $(event.currentTarget).find('.js-query');
     const query = queryTarget.val();
-    // clear out the input
-    queryTarget.val("");
 
     getDataFromAPI(query, displayData);
   })
