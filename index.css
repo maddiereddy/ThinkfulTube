@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: lightgray;
+  background-color: gainsboro;
 }
 
 body {
@@ -12,8 +12,8 @@ header, h1{
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  text-shadow: 2px 2px lightgray;
-  background-color: darkorange;
+  text-shadow: 2px 2px darkgray;
+  background-color: #ff5500;
 }
 
 fieldset, section {
@@ -23,7 +23,7 @@ fieldset, section {
 
 fieldset {
   margin: 50px 20%;
-  background-color: darkorange;
+  background-color: #ff5500;
 }
 
 section {
@@ -55,7 +55,7 @@ ul {
 
 li {
   list-style: none;
-  border-top: 2px solid darkorange;
+  border-top: 2px solid #ff5500;
   padding-bottom: 20px;
   clear: both;
 }
@@ -67,6 +67,4 @@ li p {
 li img {
   float: left;
   margin: 0 15px 15px 0;
-  border: 2px solid darkorange;
-}
-
+  border: 2px solid #ff5500;
